@@ -1,0 +1,5 @@
+tekst
+inny tekst
+Monty
+Python
+polskie znaki ąężć
