@@ -17,18 +17,18 @@ class Cards:
             cards.append((color, card))
 
     def shuffle(self):
-        quantity = int(input("Ile chcesz wylosować kart: "))
-        cards = Cards.cards
-        drawned_cards = []
-        random.shuffle(cards)
-        for card in range(quantity):
-            temp = cards.pop()
-            drawned_cards.append(temp)
-            random.shuffle(cards)
-        print(cards)
-        return drawned_cards
+        while True:
+            quantity = int(input("Ile chcesz wylosować kart: "))
+            player_cards = Cards.cards
+            drawn_cards = []
+            random.shuffle(player_cards)
+            for card in range(quantity):
+                temp = player_cards.pop()
+                drawn_cards.append(temp)
+                random.shuffle(player_cards)
+            return drawn_cards
 
 
 cards = Cards()
 print(cards.shuffle())
-print(cards.shuffle())
+# print(cards.shuffle())
